@@ -1,0 +1,23 @@
+@import "./header.css";
+@import "./footer.css";
+:root {
+  --primary-color: #b22222;
+  --secondary-color: #ffd54f;
+  --text-color: #3e2723;
+  --background-color: #f8e1c2;
+  --footer-color: #6d4c41;
+}
+
+/* Reset Basico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Bebas Neue", sans-serif;
+  background-color: var(--background-color);
+}
