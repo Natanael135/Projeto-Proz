@@ -3,13 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Sobre Nós</title>
   </head>
   <body>
-    <header>
-      <img src="logo.png" alt="Logo da pizzaria" />
-      <h1>Pizzaria</h1>
-      <button>Login</button>
+    <header class="header-header">
+      <nav class="nav-header">
+        <h1 class="title-header">Pizzaria</h1>
+
+        <!-- Menu Desktop -->
+        <ul class="nav-links-header">
+          <li><a href="#">Cardapio</a></li>
+          <li><a href="#">Ver Perfil</a></li>
+          <li><a href="#">Sobre Nós</a></li>
+          <li><a href="#">AA</a></li>
+          <li><a href="#">AA</a></li>
+        </ul>
+
+        <!-- Botão de Login Desktop -->
+        <a href="#login" class="button-login-header">Login</a>
+
+        <!-- Botão do menu mobile -->
+        <input type="checkbox" id="menu-toggle-header" />
+        <label for="menu-toggle-header" class="menu-button-header">☰</label>
+
+        <!-- Overlay e Menu Mobile -->
+        <div class="overlay-header"></div>
+        <div class="mobile-menu-header">
+          <label for="menu-toggle-header" class="close-button-header">✖</label>
+          <a href="#">Cardapio</a>
+          <a href="#">Ver Perfil</a>
+          <a href="#">Sobre Nós</a>
+          <a href="#">AA</a>
+          <a href="#">AA</a>
+          <a href="#login" class="button-login-header button-mobile-header"
+            >Login</a
+          >
+        </div>
+      </nav>
     </header>
 
     <main>
