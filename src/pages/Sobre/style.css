@@ -23,10 +23,11 @@
   h2 {
     color: var(--primary-color);
   }
-  
+
   p {
     margin-top: 1rem;
     color: var(--text-color);
+    line-height: 2;
   }
 }
 
@@ -49,10 +50,11 @@
     padding: 2rem;
     flex-direction: row;
     gap: 5rem;
+    align-items: center;
   }
 
   .section__container__about img {
-    width: 30%;
+    width: 35%;
     height: auto;
   }
 }
