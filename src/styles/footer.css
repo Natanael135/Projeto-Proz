@@ -8,12 +8,8 @@ footer {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.footer section {
-
-}
-
 .footer h3 {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 700;
   color: white;
   margin-bottom: 1rem;
@@ -22,6 +18,7 @@ footer {
 .footer p {
   color: white;
   margin-bottom: 1rem;
+  font-size: 0.875rem;
 }
 
 .footer a {
@@ -30,6 +27,7 @@ footer {
   margin-bottom: 0.5rem;
   display: block;
   transition: color 0.3s ease;
+  font-size: 0.875rem;
 }
 
 .footer a:hover {
@@ -40,6 +38,7 @@ footer {
   justify-content: center;
   color: white;
   margin-top: 1rem;
+  font-size: 0.875rem;
 }
 
 @media (min-width: 768px) {

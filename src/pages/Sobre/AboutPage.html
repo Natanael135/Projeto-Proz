@@ -9,28 +9,31 @@
   <body>
     <header class="header-header">
       <nav class="nav-header">
-        <h1 class="title-header">Pizzaria</h1>
-
+        <div class="logo-header">
+          <img
+            src="../../../public/logo-mario.png"
+            alt="Logo da Pizzaria"
+            width="90px"
+          />
+          <h1 class="title-header">Super Mario Pizza</h1>
+        </div>
         <!-- Menu Desktop -->
         <ul class="nav-links-header">
-          <li><a href="#">Cardapio</a></li>
-          <li><a href="#">Ver Perfil</a></li>
-          <li><a href="#">Sobre Nós</a></li>
-          <li><a href="#">AA</a></li>
-          <li><a href="#">AA</a></li>
+          <li><a href="../../../index.html">Cardapio</a></li>
+          <li><a href="../PerfilCliente/perfil_cliente.html">Ver Perfil</a></li>
+          <li><a href="../Sobre/AboutPage.html">Sobre Nós</a></li>
         </ul>
 
         <!-- Botão de Login Desktop -->
         <a href="#login" class="button-login-header">Login</a>
 
         <!-- Botão do menu mobile -->
-        <input type="checkbox" id="menu-toggle-header" />
-        <label for="menu-toggle-header" class="menu-button-header">☰</label>
+        <div class="menu-button-header">☰</div>
 
         <!-- Overlay e Menu Mobile -->
         <div class="overlay-header"></div>
         <div class="mobile-menu-header">
-          <label for="menu-toggle-header" class="close-button-header">✖</label>
+          <div class="close-button-header">✖</div>
           <a href="#">Cardapio</a>
           <a href="#">Ver Perfil</a>
           <a href="#">Sobre Nós</a>
@@ -43,7 +46,7 @@
       </nav>
     </header>
 
-    <main>
+    <main class="main-about">
       <section class="section__container__about">
         <div>
           <h2>
@@ -59,12 +62,15 @@
             nam labore fugit totam nostrum consectetur qui!
           </p>
         </div>
-        <!--
-        <img src="imagem1.jpg" alt="Logo da empresa" />-->
+
+        <img src="../../../public/logo-mario.png" alt="Logo da empresa" />
       </section>
 
       <section class="section__container__about reverse">
-        <!-- <img src="imagem2.jpg" alt="Imagem da Empresa ou Localização" />-->
+        <img
+          src="../../../public/logo-mario.png"
+          alt="Imagem da Empresa ou Localização"
+        />
         <div>
           <h2>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
@@ -105,5 +111,6 @@
         <p>&copy; 2025 - Todos os direitos reservados.</p>
       </div>
     </footer>
+    <script src="../../scripts/header.js"></script>
   </body>
 </html>
