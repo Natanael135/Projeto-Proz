@@ -1,7 +1,8 @@
 /* Estilos gerais para mobile (telas pequenas) */
 @import "../../styles/GlobalStyle.css";
-@import "../../styles/header.css";
-@import "../../styles/footer.css";
+@import '../../styles/header.css';
+@import '../../styles/footer.css';
+
 
 .main-about {
   padding: 1rem;
