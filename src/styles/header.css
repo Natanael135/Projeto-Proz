@@ -5,6 +5,10 @@
   display: flex;
   justify-content: center;
 }
+.logo-header {
+  display: flex;
+  gap: 1rem;
+}
 
 .title-header {
   font-size: 2rem;
@@ -116,7 +120,8 @@
 /* Ocultando menu pc quando tela for menor que 768px  e fazendo menu mobile aparecer */
 @media (max-width: 768px) {
   .nav-links-header,
-  .button-login-header {
+  .button-login-header,
+  .title-header {
     display: none;
   }
 
