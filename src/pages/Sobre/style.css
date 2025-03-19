@@ -1,16 +1,18 @@
 /* Estilos gerais para mobile (telas pequenas) */
 @import "../../styles/GlobalStyle.css";
-@import '../../styles/header.css';
-@import '../../styles/footer.css';
-
+@import "../../styles/header.css";
+@import "../../styles/footer.css";
 
 .main-about {
-  padding: 1rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  padding: 1rem;
 }
-
+.main-title-about {
+  text-align: center;
+  padding-top: 1rem;
+}
 .section__container__about {
   padding: 1.5rem 1rem;
   display: flex;
@@ -32,12 +34,12 @@
 /* Estilos para telas maiores */
 @media (min-width: 768px) {
   .main-about {
-    padding: 2rem;
     gap: 2rem;
+    padding: 1rem;
   }
 
   .section__container__about {
-    padding: 3rem 2rem;
+    padding: 2rem;
     flex-direction: row;
     gap: 5rem;
   }
