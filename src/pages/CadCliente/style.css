@@ -4,3 +4,85 @@
 @import "../../styles/footer.css";
 
 /*Estilos aqui*/
+
+.main-about {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.border-form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  width: 30%;
+  height: 80%;
+  align-items: center;
+}
+
+legend {
+  font-size: 16px;
+  margin-left: 20px;
+  padding: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 30px;
+}
+
+label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 18pxs;
+}
+
+input {
+  outline: none;
+  font-size: 16pt;
+  margin-bottom: 10px;
+  outline: none;
+}
+.input-senha{
+    text-align: center;
+}
+
+input:focus {
+    border: none;
+    place-content: none;
+    box-shadow: 0 0 8px 1px #000003f;
+  }
+
+  input::placeholder {
+    font-size: 18px;
+    color: rgba(150, 120, 107, 0.678);
+    text-align: center;
+  }
+
+  .send-button {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+
+  }
+  
+  .send-button:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    transform: scale(1.05);
+  }
+  
+  .send-button:active {
+    background-color: var(--footer-color);
+    transform: scale(0.98);
+  }
