@@ -43,11 +43,11 @@
 @media (min-width: 768px) {
   .main-about {
     gap: 2rem;
-    padding: 1rem;
+    padding: 1rem 3rem;
   }
 
   .section__container__about {
-    padding: 2rem;
+    padding: 1rem 2rem;
     flex-direction: row;
     gap: 5rem;
     align-items: center;
