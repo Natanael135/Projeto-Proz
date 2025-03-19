@@ -1,6 +1,48 @@
-/*Nao Apagara*/
+/* Estilos gerais para mobile (telas pequenas) */
 @import "../../styles/GlobalStyle.css";
-@import '../../styles/header.css';
-@import '../../styles/footer.css';
+@import "../../styles/header.css";
+@import "../../styles/footer.css";
 
-/*Estilos aqui*/
+.main-about {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.section__container__about {
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.section__container__about img {
+  width: 100%;
+  height: auto;
+}
+.reverse {
+  flex-direction: column-reverse;
+}
+
+/* Estilos para telas maiores */
+@media (min-width: 768px) {
+  .main-about {
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .section__container__about {
+    padding: 3rem 2rem;
+    flex-direction: row;
+    gap: 5rem;
+    p {
+      margin-top: 1rem;
+    }
+  }
+
+  .section__container__about img {
+    width: 30%;
+    height: auto;
+  }
+}
