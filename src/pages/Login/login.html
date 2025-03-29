@@ -9,6 +9,7 @@
   <body>
     <header class="header-header">
       <nav class="nav-header">
+        <!-- Logo -->
         <div class="logo-header">
           <img
             src="../../../public/logo-mario.png"
@@ -17,31 +18,45 @@
           />
           <h1 class="title-header">Super Mario Pizza</h1>
         </div>
+
         <!-- Menu Desktop -->
         <ul class="nav-links-header">
-          <li><a href="../../../index.html">Cardapio</a></li>
-          <li><a href="../PerfilCliente/perfil_cliente.html">Ver Perfil</a></li>
+          <li><a href="../../../index.html">Cardápio</a></li>
           <li><a href="../Sobre/AboutPage.html">Sobre Nós</a></li>
         </ul>
 
-        <!-- Botão de Login Desktop -->
-        <a href="../Login/login.html" class="button-login-header">Login</a>
+        <!-- Área de Ações (Carrinho + Login) -->
+        <div class="nav-actions">
+          <a href="../Carrinho/Carrinho.html" class="button-cart-header"
+            >Carrinho</a
+          >
+          <a href="../Login/login.html" class="button-login-header">Login</a>
+        </div>
 
         <!-- Botão do menu mobile -->
         <div class="menu-button-header">☰</div>
 
-        <!-- Overlay e Menu Mobile -->
+        <!-- Overlay do menu mobile -->
         <div class="overlay-header"></div>
+
+        <!-- Menu Mobile -->
         <div class="mobile-menu-header">
           <div class="close-button-header">✖</div>
-          <a href="../../../index.html">Cardapio</a>
-          <a href="../PerfilCliente/perfil_cliente.html">Ver Perfil</a>
+          <a href="../../../index.html">Cardápio</a>
           <a href="../Sobre/AboutPage.html">Sobre Nós</a>
-          <a
-            href="../Login/login.html"
-            class="button-login-header button-mobile-header"
-            >Login</a
-          >
+          <div class="nav-actions-mobile">
+            <a
+              href="../Carrinho/Carrinho.html"
+              class="button-login-header button-mobile-header"
+              >Carrinho</a
+            >
+            <a
+              href="../Login/login.html"
+              class="button-login-header button-mobile-header"
+            >
+              Login
+            </a>
+          </div>
         </div>
       </nav>
     </header>
