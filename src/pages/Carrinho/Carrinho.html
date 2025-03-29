@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página de Login</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Carrinho</title>
   </head>
   <body>
     <header class="header-header">
@@ -61,32 +61,58 @@
       </nav>
     </header>
 
-    <main class="container">
-      <section class="container_login">
-        <h2 class="container_bem-Vindo">Bem-vindo</h2>
-        <form class="container_form">
-          <div class="form-group">
-            <label for="email">E-mail</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Digite seu e-mail"
-            />
+    <main class="main-cart">
+      <h2>Carrinho de Compras</h2>
+      <section class="cart">
+        <div class="cart-items">
+          <!-- Card do item no carrinho -->
+          <div class="cart-item">
+            <div class="cart-item-details">
+              <p class="item-name">🍄 Super Cogumelo</p>
+              <p class="item-price">R$ 49,99</p>
+            </div>
+            <div class="cart-item-quantity">
+              <label for="quantity">Quantidade:</label>
+              <input
+                type="number"
+                id="quantity"
+                value="1"
+                min="1"
+                class="item-quantity"
+              />
+            </div>
+            <div class="cart-item-total">
+              <p>Total: <span id="item-total">R$ 49,99</span></p>
+            </div>
+            <button class="remove-btn">Remover</button>
           </div>
-          <div class="form-group">
-            <label for="password">Senha</label>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              placeholder="Digite sua senha"
-            />
+          <div class="cart-item">
+            <div class="cart-item-details">
+              <p class="item-name">🥤 Poção do Mario</p>
+              <p class="item-price">R$ 9,99</p>
+            </div>
+            <div class="cart-item-quantity">
+              <label for="quantity">Quantidade:</label>
+              <input
+                type="number"
+                id="quantity"
+                value="1"
+                min="1"
+                class="item-quantity"
+              />
+            </div>
+            <div class="cart-item-total">
+              <p>Total: <span id="item-total">R$ 9,99</span></p>
+            </div>
+            <button class="remove-btn">Remover</button>
           </div>
-          <button type="submit" class="login-button">Entrar</button>
-          <a href="#" class="forgot-password">Esqueceu a senha?</a>
-        </form>
+        </div>
       </section>
+
+      <div class="cart-summary">
+        <p>Total: <span id="total">R$ 59,98</span></p>
+        <button id="checkout-btn">Finalizar Compra</button>
+      </div>
     </main>
 
     <footer>
