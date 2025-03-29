@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Sobre Nós</title>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Carrinho</title>
   </head>
   <body>
     <header class="header-header">
@@ -44,7 +44,6 @@
           <div class="close-button-header">✖</div>
           <a href="../../../index.html">Cardápio</a>
           <a href="../Sobre/AboutPage.html">Sobre Nós</a>
-          
           <div class="nav-actions-mobile">
             <a
               href="../Carrinho/Carrinho.html"
@@ -62,50 +61,58 @@
       </nav>
     </header>
 
-    <main class="main-about">
-      <h1 class="main-title-about">Sobre nós</h1>
-      <section class="section__container__about">
-        <div>
-          <h2>Uma Pizzaria com Sabor Italiano e Alma Gamer</h2>
-          <p>
-            A Super Mario Pizza nasceu da paixão de Mario Rossi, um
-            ítalo-brasileiro que cresceu entre o aroma das pizzas de sua família
-            e o brilho das telas dos videogames. Inspirado pelas tradicionais
-            receitas napolitanas e pelas aventuras dos jogos que marcaram sua
-            infância, Mario decidiu unir essas duas paixões em um só lugar.
-          </p>
-          <p>
-            Aqui, cada pizza é feita com ingredientes selecionados e uma pitada
-            de nostalgia, trazendo o equilíbrio perfeito entre tradição e
-            diversão. Seja para enfrentar uma jornada épica em seu jogo favorito
-            ou apenas compartilhar bons momentos com amigos, nossas pizzas são o
-            power-up perfeito para qualquer ocasião!
-          </p>
+    <main class="main-cart">
+      <h2>Carrinho de Compras</h2>
+      <section class="cart">
+        <div class="cart-items">
+          <!-- Card do item no carrinho -->
+          <div class="cart-item">
+            <div class="cart-item-details">
+              <p class="item-name">🍄 Super Cogumelo</p>
+              <p class="item-price">R$ 49,99</p>
+            </div>
+            <div class="cart-item-quantity">
+              <label for="quantity">Quantidade:</label>
+              <input
+                type="number"
+                id="quantity"
+                value="1"
+                min="1"
+                class="item-quantity"
+              />
+            </div>
+            <div class="cart-item-total">
+              <p>Total: <span id="item-total">R$ 49,99</span></p>
+            </div>
+            <button class="remove-btn">Remover</button>
+          </div>
+          <div class="cart-item">
+            <div class="cart-item-details">
+              <p class="item-name">🥤 Poção do Mario</p>
+              <p class="item-price">R$ 9,99</p>
+            </div>
+            <div class="cart-item-quantity">
+              <label for="quantity">Quantidade:</label>
+              <input
+                type="number"
+                id="quantity"
+                value="1"
+                min="1"
+                class="item-quantity"
+              />
+            </div>
+            <div class="cart-item-total">
+              <p>Total: <span id="item-total">R$ 9,99</span></p>
+            </div>
+            <button class="remove-btn">Remover</button>
+          </div>
         </div>
-
-        <img src="../../../public/logo-mario.png" alt="Logo da empresa" />
       </section>
 
-      <section class="section__container__about reverse">
-        <img
-          src="../../../public/logo-mario.png"
-          alt="Imagem da Empresa ou Localização"
-        />
-        <div>
-          <h2>Um Espaço para Jogar e Saborear</h2>
-          <p>
-            Além de um cardápio irresistível, nossa pizzaria oferece um ambiente
-            descontraído, onde os fãs de games podem reviver clássicos ou
-            descobrir novos desafios. Contamos com uma seleção de consoles retrô
-            e modernos para quem quiser aproveitar uma partida enquanto saboreia
-            uma autêntica pizza italiana.
-          </p>
-          <p>
-            Venha conhecer a Pizza do Mario e descubra um mundo onde sabor e
-            diversão se encontram no mesmo controle!
-          </p>
-        </div>
-      </section>
+      <div class="cart-summary">
+        <p>Total: <span id="total">R$ 59,98</span></p>
+        <button id="checkout-btn">Finalizar Compra</button>
+      </div>
     </main>
 
     <footer>
@@ -131,6 +138,5 @@
         <p>&copy; 2025 - Todos os direitos reservados.</p>
       </div>
     </footer>
-    <script src="../../scripts/header.js"></script>
   </body>
 </html>
