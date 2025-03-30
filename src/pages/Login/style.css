@@ -1,9 +1,9 @@
-/*Nao Apagara*/
-@import "../../styles/GlobalStyle.css";
-@import '../../styles/header.css';
-@import '../../styles/footer.css';
+/* Não Apagar */
+@import "../../styles/globalStyle.css";
+@import "../../styles/header.css";
+@import "../../styles/footer.css";
 
-/*Estilos aqui*/
+/* Estilos aqui */
 /* style.css */
 
 /* Estilos para o container principal (main) */
@@ -11,72 +11,105 @@
   display: flex;
   justify-content: center; /* Centraliza horizontalmente */
   align-items: center; /* Centraliza verticalmente */
-  min-height: calc(100vh - 200px); /* Ajusta a altura subtraindo header e footer */
-  padding: 20px;
+  margin: 4rem 2rem;
+  background-color: var(--background-color);
 }
 
 /* Estilos para a seção de login */
 .container_login {
-  width: 400px; /* Largura da seção */
+  background-color: white;
+  width: 400px;
   padding: 20px;
-  border: 1px solid #ccc; /* Borda para visualização */
-  border-radius: 5px; /* Bordas arredondadas */
-  text-align: center; /* Centraliza o conteúdo interno */
+  border: 1px solid var(--secondary-color);
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Título "Bem-vindo" */
 .container_bem-Vindo {
+  color: var(--primary-color);
   font-size: 24px;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 /* Estilos para o formulário */
 .container_form {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centraliza os elementos do formulário */
+  align-items: center;
 }
 
 /* Estilos para cada grupo de campo (label + input) */
 .form-group {
   margin-bottom: 15px;
-  width: 100%; /* Ocupa a largura total da seção */
+  width: 100%;
 }
 
 /* Estilos para os labels */
 .form-group label {
   display: block;
-  text-align: left; /* Alinha o texto à esquerda */
+  text-align: left;
   margin-bottom: 5px;
+  color: var(--text-color);
+  font-weight: 500;
 }
 
 /* Estilos para os inputs */
 .form-group input {
-  width: 95%; /* Ajusta a largura do input */
+  width: 95%;
   padding: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--secondary-color);
   border-radius: 4px;
-  box-sizing: border-box; /* Garante que o padding não aumente o tamanho total */
+  box-sizing: border-box;
+  background-color: #fff;
+  color: var(--text-color);
+}
+
+.form-group input:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: 0 0 5px rgba(178, 34, 34, 0.5);
 }
 
 /* Estilos para o botão de login */
 .login-button {
-  background-color: #4caf50; /* Cor de fundo */
+  background-color: var(--primary-color);
   color: white;
   padding: 10px 15px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  width: auto; /* Largura automática */
+  width: auto;
   margin-top: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
 .login-button:hover {
-  background-color: #3e8e41; /* Cor de fundo no hover */
+  background-color: #8b1a1a;
 }
 
 /* Estilos para o link "Esqueceu a senha?" */
-.forgot-password {
+.forgot-password,
+.cadastrar {
   margin-top: 10px;
   display: block;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.forgot-password:hover,
+.cadastrar:hover {
+  text-decoration: underline;
+}
+.container_cadastro {
+  display: flex;
+  text-align: center;
+  gap: 0.5rem;
+  p {
+    margin-top: 10px;
+  }
 }
