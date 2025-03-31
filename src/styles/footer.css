@@ -4,8 +4,11 @@ footer {
 }
 .footer {
   gap: 2rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /*display: grid;
+  grid-template-columns: repeat(2, 1fr);*/
 }
 
 .footer h3 {
@@ -43,8 +46,9 @@ footer {
 
 @media (min-width: 768px) {
   .footer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: space-between;
+    justify-content: space-evenly;
+  }
+  .endereco-footer {
+    max-width: 300px;
   }
 }
