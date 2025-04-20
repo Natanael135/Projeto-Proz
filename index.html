@@ -4,11 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="./public/estrela-portuguesa.png"
+      type="image/x-icon"
+    />
+
     <title>Cardápio</title>
   </head>
+
   <body>
     <header class="header-header">
       <nav class="nav-header">
+        <!-- Logo -->
         <div class="logo-header">
           <img
             src="./public/logo-mario.png"
@@ -17,102 +25,62 @@
           />
           <h1 class="title-header">Super Mario Pizza</h1>
         </div>
+
         <!-- Menu Desktop -->
         <ul class="nav-links-header">
-          <li><a href="./index.html">Cardapio</a></li>
-          <li>
-            <a href="./src/pages/PerfilCliente/perfil_cliente.html"
-              >Ver Perfil</a
-            >
-          </li>
+          <li><a href="./index.html">Cardápio</a></li>
           <li><a href="./src/pages/Sobre/AboutPage.html">Sobre Nós</a></li>
         </ul>
 
-        <!-- Botão de Login Desktop -->
-        <a href="./src/pages/Login/login.html" class="button-login-header"
-          >Login</a
-        >
+        <!-- Área de Ações (Carrinho + Login) -->
+        <div class="nav-actions">
+          <a
+            href="./src/pages/Carrinho/Carrinho.html"
+            class="button-cart-header"
+            >Carrinho</a
+          >
+          <a href="./src/pages/Login/login.html" class="button-login-header"
+            >Login</a
+          >
+        </div>
 
         <!-- Botão do menu mobile -->
         <div class="menu-button-header">☰</div>
 
-        <!-- Overlay e Menu Mobile -->
+        <!-- Overlay do menu mobile -->
         <div class="overlay-header"></div>
+        
+        <!-- Menu Mobile -->
         <div class="mobile-menu-header">
           <div class="close-button-header">✖</div>
-          <a href="./index.html">Cardapio</a>
-          <a href="./src/pages/PerfilCliente/perfil_cliente.html">Ver Perfil</a>
+          <a href="./index.html">Cardápio</a>
           <a href="./src/pages/Sobre/AboutPage.html">Sobre Nós</a>
-          <a
-            href="./src/pages/Login/login.html"
-            class="button-login-header button-mobile-header"
-            >Login</a
-          >
+          <div class="nav-actions-mobile">
+            <a
+              href="./src/pages/Carrinho/Carrinho.html"
+              class="button-login-header button-mobile-header"
+              >Carrinho</a
+            >
+            <a
+              href="/src/pages/Login/login.html"
+              class="button-login-header button-mobile-header"
+            >
+              Login
+            </a>
+          </div>
         </div>
       </nav>
     </header>
-
-    <main class="container">
-      <h2>Sabores - Pizza</h2>
-      <img
-        src="super-queijos.png"
-        alt="Super Queijos"
-        width="200"
-        height="200"
-      />
-      <p>Super Queijos - R$ 50,00</p>
-
-      <img
-        src="super-queijos.png"
-        alt="Super Queijos"
-        width="200"
-        height="200"
-      />
-      <p>Frango com Catupiry - R$ 50,00</p>
-
-      <img
-        src="super-queijos.png"
-        alt="Super Queijos"
-        width="200"
-        height="200"
-      />
-      <p>À Moda - R$ 50,00</p>
-
-      <br />
-
-      <img
-        src="super-queijos.png"
-        alt="Super Queijos"
-        width="200"
-        height="200"
-      />
-      <p>Portuguesa - R$ 50,00</p>
-
-      <img
-        src="super-queijos.png"
-        alt="Super Queijos"
-        width="200"
-        height="200"
-      />
-      <p>Calabresa - R$ 50,00</p>
-
-      <img
-        src="super-queijos.png"
-        alt="Super Queijos"
-        width="200"
-        height="200"
-      />
-      <p>Milho com Bacon - R$ 50,00</p>
-
-      <h2>Bebidas</h2>
-      <img src="s-l1200.png" alt="Coca-Cola" width="200" height="200" />
-      <p>Coca-Cola (lata) - R$ 5,00</p>
-
-      <img
-        src="png-transparent-fizzy-drinks-fanta-orange-soft-drink-carbonated-water-fanta-orange-orange-drink-juice-thumbnail.png"
-      />
-    </main>
-
+    <div class="menu-section">
+      <h2>☆━ 𝐒𝐚𝐛𝐨𝐫𝐞𝐬 𝐝𝐞 𝐏𝐢𝐳𝐳𝐚𝐬 ━☆</h2>
+      <div class="menu-flex" id="pizzas-container"></div>
+    </div>
+    
+    <div class="menu-section">
+      <h2>☆━ 𝐁𝐞𝐛𝐢𝐝𝐚𝐬 ━☆</h2>
+      <div class="menu-flex" id="bebidas-container"></div>
+    </div>
+    
     <footer>
       <div class="footer">
         <section class="endereco-footer">
@@ -137,5 +105,6 @@
       </div>
     </footer>
     <script src="./src/scripts/header.js"></script>
+    <script src="./src/scripts/cardapiu.js"></script>
   </body>
 </html>
