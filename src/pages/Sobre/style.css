@@ -1,5 +1,5 @@
 /* Estilos gerais para mobile (telas pequenas) */
-@import "../../styles/GlobalStyle.css";
+@import "../../styles/globalStyle.css";
 @import "../../styles/header.css";
 @import "../../styles/footer.css";
 
@@ -9,32 +9,36 @@
   gap: 1.5rem;
   padding: 1rem;
 }
+
 .main-title-about {
   text-align: center;
   padding-top: 1rem;
   color: var(--primary-color);
+  font-size: 2.5rem;
 }
+
 .section__container__about {
   padding: 1.5rem 1rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
 
-  h2 {
-    color: var(--primary-color);
-  }
+.section__container__about h2 {
+  color: var(--primary-color);
+}
 
-  p {
-    margin-top: 1rem;
-    color: var(--text-color);
-    line-height: 2;
-  }
+.section__container__about p {
+  margin-top: 1rem;
+  color: var(--text-color);
+  line-height: 2;
 }
 
 .section__container__about img {
   width: 100%;
   height: auto;
 }
+
 .reverse {
   flex-direction: column-reverse;
 }
@@ -57,4 +61,48 @@
     width: 35%;
     height: auto;
   }
+}
+
+/* Carrosel começa aqui */
+.carousel-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 2rem auto;
+  overflow: hidden;
+}
+
+/* Slide com as imagens */
+.carousel-slide {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+  display: block;
+  border-radius: 20%;
+}
+
+/* Dots abaixo das imagens */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.carousel-dot.active {
+  background-color: black;
 }
