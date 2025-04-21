@@ -36,6 +36,10 @@ Site completo de uma pizzaria temática do Super Mario, desenvolvido como parte 
 │   ├── fireball-calabresa.png
 │   ├── logo-mario.png
 │   ├── pocao-mario.png
+│   ├── slider2.png
+│   ├── slider3.png
+│   ├── slider4.png
+│   ├── slider5.png
 │   ├── suco-yoshi.png
 │   ├── super-cogumelo.png
 │   └── turbo-luigi.png
@@ -54,6 +58,8 @@ Site completo de uma pizzaria temática do Super Mario, desenvolvido como parte 
 │   │       ├── AboutPage.html
 │   │       └── style.css
 │   ├── scripts/
+│   │   ├── cardapio.js
+│   │   ├── carousel.js
 │   │   └── header.js
 │   └── styles/
 │       ├── footer.css
