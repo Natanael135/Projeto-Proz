@@ -60,7 +60,8 @@ Site completo de uma pizzaria temática do Super Mario, desenvolvido como parte 
 │   ├── scripts/
 │   │   ├── cardapio.js
 │   │   ├── carousel.js
-│   │   └── header.js
+│   │   ├── header.js
+│   │   └── validaFormulario.js
 │   └── styles/
 │       ├── footer.css
 │       ├── globalStyle.css
@@ -118,6 +119,14 @@ Site completo de uma pizzaria temática do Super Mario, desenvolvido como parte 
   - Campos obrigatórios: Nome, Endereço, Telefone, Email, Senha
   - Validação básica de campos
   - Design limpo com fieldset e legend
+    
+- **Sistema de Acesso**:
+  - Todos os campos são obrigatórios
+  - O e-mail deve estar no formato válido (`exemplo@dominio.com`)
+  - A senha deve conter pelo menos 6 caracters
+  - A confirmação da senha deve ser igual à senha digitada
+    
+- Caso alguma validação falhe, o formulário **não será enviado** e um alerta será exibido ao usuário.
 
 ### 4. Página de Login (login.html)
 
@@ -126,6 +135,13 @@ Site completo de uma pizzaria temática do Super Mario, desenvolvido como parte 
   - Link "Esqueceu a senha?"
   - Opção para cadastro de novos clientes
   - Botão de login estilizado
+ 
+- **Sistema de Acesso**:
+  - Todos os campos são obrigatórios
+  - O e-mail deve estar no formato válido (`exemplo@dominio.com`)
+  - A senha deve conter pelo menos 6 caracters
+    
+- Caso alguma validação falhe, o formulário **não será enviado** e um alerta será exibido ao usuário.
 
 ### 5. Carrinho de Compras (Carrinho.html)
 
