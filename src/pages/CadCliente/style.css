@@ -3,7 +3,6 @@
 @import "../../styles/header.css";
 @import "../../styles/footer.css";
 
-/* Estilos aqui */
 
 .container {
   display: flex;
@@ -80,4 +79,17 @@
 
 .login-button:hover {
   background-color: #8b1a1a;
+}
+
+
+.input-error {
+  border: 1px solid red !important;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.75rem;
+  margin-top: 2px;
+  display: block;
+  text-align: left;
 }
