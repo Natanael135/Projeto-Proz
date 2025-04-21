@@ -49,7 +49,7 @@
 
         <!-- Overlay do menu mobile -->
         <div class="overlay-header"></div>
-        
+
         <!-- Menu Mobile -->
         <div class="mobile-menu-header">
           <div class="close-button-header">✖</div>
@@ -75,106 +75,12 @@
     <main class="menu-container">
       <section class="menu-section">
         <h2 class="menu-title">🍕 Pizzas Temáticas</h2>
-        <div class="menu-flex">
-          <div class="menu-item">
-            <img src="/public/super-cogumelo.png" alt="Super Cogumelo" />
-            <div class="menu-info">
-              <p class="item-name">🍄 Super Cogumelo</p>
-              <p class="item-description">
-                Queijos especiais com cogumelos salteados.
-              </p>
-              <p class="item-price">R$ 49,99</p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <img
-              src="/public/fireball-calabresa.png"
-              alt="Fireball Calabresa"
-            />
-            <div class="menu-info">
-              <p class="item-name">🔥 Fireball Calabresa</p>
-              <p class="item-description">
-                Calabresa apimentada com molho especial.
-              </p>
-              <p class="item-price">R$ 54,99</p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <img
-              src="/public/estrela-portuguesa.png"
-              alt="Estrela Portuguesa"
-            />
-            <div class="menu-info">
-              <p class="item-name">⭐ Estrela Portuguesa</p>
-              <p class="item-description">
-                Tradicional portuguesa com um toque especial.
-              </p>
-              <p class="item-price">R$ 53,99</p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <img src="/public/castelo-bowser.png" alt="Castelo do Bowser" />
-            <div class="menu-info">
-              <p class="item-name">🏰 Castelo do Bowser</p>
-              <p class="item-description">Quatro queijos com pimenta.</p>
-              <p class="item-price">R$ 39,99</p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <img src="/public/arco-iris-yoshi.png" alt="Arco-Íris do Yoshi" />
-            <div class="menu-info">
-              <p class="item-name">🌈 Arco-Íris do Yoshi</p>
-              <p class="item-description">
-                Pizza doce com frutas e chocolate branco.
-              </p>
-              <p class="item-price">R$ 64,99</p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <img src="/public/turbo-luigi.png" alt="Turbo Luigi" />
-            <div class="menu-info">
-              <p class="item-name">🚀 Turbo Luigi</p>
-              <p class="item-description">Frango, catupiry e bacon crocante.</p>
-              <p class="item-price">R$ 62,99</p>
-            </div>
-          </div>
-        </div>
+        <div class="menu-flex" id="pizzas-container"></div>
       </section>
 
       <section class="menu-section">
         <h2 class="menu-title">🥤 Bebidas Temáticas</h2>
-        <div class="menu-flex">
-          <div class="menu-item">
-            <img src="/public/pocao-mario.png" alt="Poção do Mario" />
-            <div class="menu-info">
-              <p class="item-name">🥤 Poção do Mario</p>
-              <p class="item-description">Refrigerante de cola.</p>
-              <p class="item-price">R$ 9,99</p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <img src="/public/suco-yoshi.png" alt="Suco do Yoshi" />
-            <div class="menu-info">
-              <p class="item-name">🍊 Suco do Yoshi</p>
-              <p class="item-description">Suco de Fruta 100% natural.</p>
-              <p class="item-price">R$ 7,99</p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <img
-              src="./public/drink-mario-luigi.png"
-              alt="Drink do Mario e Luigi"
-            />
-            <div class="menu-info">
-              <p class="item-name">🔴🟢 Drink do Mario & Luigi</p>
-              <p class="item-description">
-                Mistura refrescante de Frutas Vermelhas com Morango ou
-                limão-siciliano com hortelã e manga
-              </p>
-              <p class="item-price">R$ 14,99</p>
-            </div>
-          </div>
-        </div>
+        <div class="menu-flex" id="bebidas-container"></div>
       </section>
     </main>
 
@@ -202,5 +108,6 @@
       </div>
     </footer>
     <script src="./src/scripts/header.js"></script>
+    <script src="./src/scripts/cardapio.js"></script>
   </body>
 </html>
