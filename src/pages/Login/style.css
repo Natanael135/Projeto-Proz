@@ -113,3 +113,15 @@
     margin-top: 10px;
   }
 }
+
+.input-error {
+  border: 1px solid red !important;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.75rem;
+  margin-top: 2px;
+  display: block;
+  text-align: left;
+}
